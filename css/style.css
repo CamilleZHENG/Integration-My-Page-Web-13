@@ -1,0 +1,242 @@
+@font-face{
+	font-family: "araranth";
+	src:url(../fonts/Amaranth-Regular.ttf);
+}
+@font-face{
+	font-family: "openSans";
+	src:url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+	font-family: "openSans", sans-serif;
+	font-size: 1em;
+	background-color: rgb(232, 232, 232);
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	transition: all 1s ease 0s;
+}
+header>div, header>nav, main{
+	max-width: 1500px;
+	margin:auto;
+}
+header{
+	background-image: url(../img/bg.jpg);
+	background-size: contain;
+	display: flex;
+	flex-flow: row wrap;
+	color: white;
+}
+header>p{
+	flex-basis: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.1);
+	padding: 5px 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+header>div{
+	flex-basis: 65%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header>div>a>img{
+	width: 200px;
+	height: auto;
+}
+header>div>div{
+	flex-basis: 16%;
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+	justify-content: space-between;
+	align-items: center;
+}
+header>div>div p{
+	margin:0;
+}
+header i{
+	color: rgb(203, 216, 136);
+}
+header>nav{
+	flex-basis: 70%;
+	margin-top: 40px;
+	margin-bottom: 7px;
+}
+header>nav>ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 0;
+}
+header>nav>ul a{
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	padding: 10px 20px;
+}
+header>nav a:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+h2,h3,h4{
+	font-weight: normal;
+}
+main>section{
+	width: 75%;
+	margin: auto;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-flow: row wrap;
+}
+main>section:first-of-type{
+	display: block;
+}
+main>section>img{
+	width: 97%;
+	margin: auto;
+	padding: 1.5%;
+	background-color: white;
+}
+main>section>div{
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	color: white;
+	background-color: rgba(135, 158, 15, 0.7);
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+main>section>div:hover{
+	background-color: rgba(135, 158, 15, 1);
+	transition: all 1s ease 0s;
+}
+main>section>div>h3{
+	font-family: "araranth";
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main>section>div>p{
+	font-size: 0.8em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main>section:nth-of-type(2){
+	background-color: white;
+	margin-bottom: 70px;
+}
+main>section:nth-of-type(2)>h3{
+	font-family: "araranth";
+	text-align: left;
+	flex-basis: 100%;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+main>section:nth-of-type(2)>ul{
+	flex-basis: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding:0 3%;
+}
+main>section:nth-of-type(2)>ul li{
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+main>section:nth-of-type(2):hover >ul>li{
+	opacity: 0.5;
+	transition: all 1s ease 0s;
+}
+main>section:nth-of-type(2):hover >ul>li:hover{
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
+main>section:nth-of-type(3){
+	flex-basis: 100%;
+	justify-content: space-between;
+}
+main>section article{
+	background-color: white;
+	flex-basis: 32%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 20px;
+}
+main>section article h4{
+	font-family: "araranth";
+	padding: 10px 40px;
+	margin: 0;
+	flex-basis: 100%;
+	color: white;
+}
+main>section article>img:first-child{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 5%;
+}
+main>section article:first-child>h4{
+	background-color: rgb(226, 106, 106);
+}
+main>section article:nth-child(2)>h4{
+	background-color: rgb(244, 179, 80);
+}
+main>section article:nth-child(3)>h4{
+	background-color: rgb(78, 205, 196);
+}
+main>section article>img:nth-of-type(2){
+	width: 60%;
+	margin-top: 20px;
+}
+main>section article>p,main>section article>small{
+	flex-basis: 100%;
+	text-align: center;
+}
+main>section article>p{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+footer{
+	background-image: url(../img/bg.jpg);
+	background-size: contain;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 80px;
+}
+footer>nav{
+	flex-basis: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+footer>nav>ul{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	list-style-type: none;
+}
+footer li,footer article{
+	text-align: center;
+}
+h2{
+	color: white;
+	text-transform: uppercase;
+}
+footer a{
+	opacity: 0.6;
+}
+footer a:hover{
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
